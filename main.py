@@ -20,14 +20,13 @@ def students_report_card_generator():
         subjects.append(subject)
         subjects_marks.append(subject_mark)
     # print(len(subjects))
-    # percentage = (sum(subjects_marks))/choice
-    # print(percentage)
     len_of_subject = len(subjects)
     a = 1
-    
     print("S.no     Subject     Marks")
     for i in range(len_of_subject):
         print(f"{a}.        {subjects[i]}           {subjects_marks[i]}")
         a += 1
+    percentage = (sum(subjects_marks))/choice
+    print(f"The total percentage is {percentage}")
 
 students_report_card_generator()
