@@ -58,4 +58,3 @@ def median_calculator():
         median = numbers[middle_index]
         print(median)
         
-median_calculator()
