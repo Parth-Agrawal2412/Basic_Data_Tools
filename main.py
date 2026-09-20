@@ -37,4 +37,25 @@ def mean_calculator():
         num = int(input("Enter your number: "))
         numbers.append(num)
     mean = (sum(numbers))/choice
-    print(f"The Average of two numbers is {mean}")
+    print(f"The Mean of two numbers is {mean}")
+
+def median_calculator():
+    choice = int(input("Enter how many numbers you want to enter: "))
+    numbers = []
+    for i in range(choice):
+        num = int(input("Enter number: "))
+        numbers.append(num)
+    numbers.sort()
+    if choice % 2 == 0:
+        middle_index_1 = int(len(numbers) / 2) - 1
+        middle_index_2 = int(len(numbers) / 2)
+        middle_index_1_value = numbers[middle_index_1]
+        middle_index_2_value = numbers[middle_index_2]
+        average = (middle_index_1_value + middle_index_2_value) / 2
+        print(average)
+    else:
+        middle_index = int(len(numbers) / 2)
+        median = numbers[middle_index]
+        print(median)
+        
+median_calculator()
