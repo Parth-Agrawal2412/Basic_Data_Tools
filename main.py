@@ -8,5 +8,4 @@ def average_finder():
         numbers.append(num)
     average = (sum(numbers))/choice
     print(f"The Average of two numbers is {average}")
-
-average_finder()
+    i = None
