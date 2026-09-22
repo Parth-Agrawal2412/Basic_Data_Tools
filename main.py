@@ -66,12 +66,7 @@ def range_calculator():
         num = int(input("Enter your Number: "))
         numbers.append(num)
     numbers.sort()
-    print(numbers)
     smallest_number = float(numbers[0])
     largest_number = float(numbers[len(numbers) - 1])
-    print(largest_number)
-    print(smallest_number)
     range_result = largest_number - smallest_number
     print(range_result)
-
-range_calculator()
