@@ -70,3 +70,13 @@ def range_calculator():
     largest_number = float(numbers[len(numbers) - 1])
     range_result = largest_number - smallest_number
     print(range_result)
+
+def mode_finder():
+    choice = int(input("Enter how many numbers you want to enter: "))
+    numbers = []
+    for i in range(choice):
+        num = int(input("Enter your Number: "))
+        numbers.append(num)
+    numbers.sort()
+    for i in range(numbers):
+        pass
