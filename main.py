@@ -1,4 +1,4 @@
-
+import random
 
 def average_finder():
     choice = int(input("Enter how many numbers you add to find average: "))
@@ -81,3 +81,39 @@ def mode_finder():
     for i in range(numbers):
         pass
 
+
+def dice_roll_result_calculator():
+    choice = int(input("Enter how many times you want to roll the dice: "))
+    one = 0
+    two = 0
+    three = 0
+    four = 0
+    five = 0
+    six = 0
+    hi = 0
+    for i in range(choice):
+        dice_result = 0
+        dice_result = random.randint(1 , 6)
+        if dice_result==1:
+            one = one + 1
+        elif dice_result==2:
+            two = two + 1
+        elif dice_result==3:
+            three = three + 1
+        elif dice_result==5:
+            four = four + 1
+        elif dice_result==4:
+            five = five + 1
+        elif dice_result==6:
+            six = six + 1
+        else:
+            hi = hi + 1
+
+    print(f"one appears {one}")
+    print(f"two appears {two}")
+    print(f"three appears {three}")
+    print(f"four appears {four}")
+    print(f"five appears {five}")
+    print(f"six appears {six}")
+
+dice_roll_result_calculator()
