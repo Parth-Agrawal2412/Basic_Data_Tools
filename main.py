@@ -7,7 +7,7 @@ def average_finder():
         num = int(input("Enter your number: "))
         numbers.append(num)
     average = (sum(numbers))/choice
-    print(f"The Average of two numbers is {average}")
+    print(f"The Average of {choice} numbers is {average}")
 
 def students_report_card_generator():
     choice = int(input("Enter how many sujects you want to enter: "))
