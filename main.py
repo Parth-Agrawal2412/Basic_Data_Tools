@@ -21,9 +21,9 @@ def students_report_card_generator():
     # print(len(subjects))
     len_of_subject = len(subjects)
     a = 1
-    print("S.no     Subject     Marks")
+    print("S.no     Subject         Marks")
     for i in range(len_of_subject):
-        print(f"{a}.        {subjects[i]}           {subjects_marks[i]}")
+        print(f"{a}.        {subjects[i]}               {subjects_marks[i]}")
         a += 1
     percentage = (sum(subjects_marks))/choice
     print(f"The total percentage is {percentage}")
@@ -37,7 +37,7 @@ def mean_calculator():
         num = int(input("Enter your number: "))
         numbers.append(num)
     mean = (sum(numbers))/choice
-    print(f"The Mean of two numbers is {mean}")
+    print(f"The Mean of {choice} numbers is {mean}")
 
 def median_calculator():
     choice = int(input("Enter how many numbers you want to enter: "))
@@ -116,4 +116,33 @@ def dice_roll_result_calculator():
     print(f"five appears {five}")
     print(f"six appears {six}")
 
-dice_roll_result_calculator()
+
+while True:
+    choice = input("Enter you choice to run the program: ")
+    if choice=="y":
+        print("""
+            1. Average Finder
+            2. Student Report card Generator
+            3. Mean Calculator
+            4. Median Calculator
+            5. Mode finder
+            6. Range Calculator
+            7. Dice roll result calculator
+        """)
+        choice2 = input("Enter your choice hich program to run: ")
+        if choice2=="1":
+            average_finder()
+        elif choice2=="2":
+            students_report_card_generator()
+        elif choice2=="3":
+            mean_calculator()
+        elif choice2=="4":
+            median_calculator()
+        elif choice2=="5":
+            mode_finder()
+        elif choice2=="6":
+            range_calculator()
+        elif choice2=="7":
+            dice_roll_result_calculator()
+    else:
+        break
